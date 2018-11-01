@@ -29,13 +29,14 @@ public class Particles
 	private double vectorCreator()
 	{
 		boolean particleDirection = new Random().nextBoolean();
+		double rand = new Random().nextDouble() * 6;
 		if(particleDirection)
 		{
-			return new Random().nextDouble() * 6;
+			return rand;
 		}
 		else
 		{
-			return new Random().nextDouble() * -6;
+			return rand * -1;
 		}
 	}
 	
